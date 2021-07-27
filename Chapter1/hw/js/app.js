@@ -2,7 +2,6 @@ import TaskList from './components/TaskList.js';
 import AlertMessage from './components/AlertBox.js';
 import TaskContainer from './components/TaskContainer.js';
 import clearScreen from './models/clearScreen.js';
-import createTask from './models/createTask.js';
 
 var taskList = [];
 var date = new Date();
@@ -36,7 +35,24 @@ searchBtn.addEventListener('click', function() {
     searchInput.focus();
 });
 
-submitBtn.addEventListener('click', 
+submitBtn.addEventListener('click', function() {
+    if(addInput.value === '')
+    {
+        errorMessage.style.display = 'block';
+        setTimeout(function() {errorMessage.style.display = 'none';}, 2000);
+    }
+    else
+    {
+        let input = {
+            name: addInput.value,
+            date: date.getDate() + '/' + (date.getMonth() + 1) + '/' + date.getFullYear()
+        }
+        taskList.push(input);
+        localStorage.setItem('tasklist', JSON.stringify(taskList));
+        clearScreen();
+        myList.setAttribute('list', localStorage.getItem('tasklist'));
+        addInput.value = '';
+    }
 });
 
 addInput.addEventListener('keyup', (e) => {
