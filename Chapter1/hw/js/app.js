@@ -3,6 +3,8 @@ import AlertMessage from './components/AlertBox.js';
 import TaskContainer from './components/TaskContainer.js';
 import clearScreen from './models/clearScreen.js';
 
+
+
 var taskList = [];
 var date = new Date();
 const localStorage = window.localStorage;
@@ -18,6 +20,7 @@ const searchInput = document.getElementById('search-input')
 const submitBtn = document.getElementById('submit-btn');
 const errorMessage = document.getElementById('error-message');
 
+window.onload = myList.setAttribute('list', localStorage.getItem('tasklist'));
 
 closeBtn.addEventListener('click', function() {
     // popUp.style.opacity = 0;
