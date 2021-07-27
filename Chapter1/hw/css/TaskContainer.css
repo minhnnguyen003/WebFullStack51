@@ -1,0 +1,18 @@
+.task-container {
+    margin: 15px auto;
+    display: flex;
+    align-items: center;
+    height: 55px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    width: 1200px;
+}
+
+.checkbox {
+    margin: 3px 10px 0 10px ;
+}
+
+.remove-btn {
+    margin-left: 15px;
+    
+}

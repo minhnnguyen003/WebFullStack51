@@ -1,0 +1,27 @@
+.action-pane {
+    float: left;
+    height: 100%;
+    
+}
+
+.btn {
+    border-radius: 5px;
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    color: #838383;
+    max-height: 10vh;
+    justify-content: left;
+    align-items: center;
+    font-size: 20px;
+    margin: 10 0 10px 0;
+}
+
+.btn:hover {
+    background-image: linear-gradient(to top right, #F5F6F7, #DCDDDE);
+}
+
+#plus-icon, #magnifier-icon {
+    margin-right: 15px;
+    width: 30px;
+}

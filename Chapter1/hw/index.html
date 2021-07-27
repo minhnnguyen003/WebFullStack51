@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-xVVam1KS4+Qt2OrFa+VdRUoXygyKIuNWUUUBZYv+n27STsJ7oDOHJgfF0bNKLMJF" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>To do list</title>
+</head>
+<body>
+    <section class="app">
+        <div class="col-2 action-pane">
+            <div class="btn" id="add-btn">
+                <i class="fal fa-plus" id="plus-icon"></i>
+                Add Task
+            </div>
+
+            <div class="search-pane">
+                <div class="btn" id="search-btn">
+                    <i class="far fa-search" id="magnifier-icon"></i>
+                    Search
+                </div>
+            </div>
+        </div>
+        <task-list id="task-list"></task-list>
+
+        
+    </section>
+    <section class="pop-up-bg" id="popup-screen">
+        <div id="close-btn">
+            <i class="fal fa-times-square fa-3x"></i>
+        </div>
+        <div class="add-window">
+            <div class="box">
+                <i class="fal fa-plus"></i>
+                <input type="text" id="add-input" placeholder="Add a task">
+                <input type="submit" id="submit-btn" value="Add Task">
+            </div>
+        </div>
+        <alert-message></alert-message>
+    </section>
+        <div class="search-box col-10" id="search-box">
+        <input type="text" id="search-input" placeholder="Search">
+    </div>
+</body>
+    <script src="./js/app.js" type="module"></script>
+</html>
