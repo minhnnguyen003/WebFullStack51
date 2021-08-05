@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get GitHub Profile</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-xVVam1KS4+Qt2OrFa+VdRUoXygyKIuNWUUUBZYv+n27STsJ7oDOHJgfF0bNKLMJF" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="col-12 error-message" id="error-message"><strong>Alert!</strong> You cannot find blank user</div>
+    <div class="container">
+        <div class="result">
+            <fieldset>
+            <div class="result-block">
+                <label for="name">Name: </label>
+                <div id="name"></div>
+            </div>
+            <div class="result-block">
+                <label for="email">Email: </label>
+                <div id="email"></div>
+            </div>
+            <div class="result-block">
+                <label for="company">Company: </label>
+                <div id="company"></div>
+            </div>
+            <div class="result-block">
+                <label for="follower">Follower: </label>
+                <div id="follower"></div>
+            </div>
+            </fieldset>
+        </div>
+        <fieldset id="right">
+            <div class="result-block" >
+                <label for="avatar">Avatar:</label>
+                <div id="avatar"></div>
+            </div>
+        </fieldset>
+    </div>
+    <div class="pop-up-bg">
+        <div class="window">
+            <div class="input-container">
+                <i class="fal fa-plus"></i>
+                <input type="text" name="git-username" id="user-input" placeholder="Enter a username">
+                <input type="submit" id="submit-btn" value="Find">
+            </div>
+        </div>
+    </div>
+    <footer></footer>
+</body>
+    <script src="./js/app.js" type="module"></script>
+</html>
