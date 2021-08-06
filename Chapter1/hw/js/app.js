@@ -21,28 +21,30 @@ const submitBtn = document.getElementById('submit-btn');
 const errorMessage = document.getElementById('error-message');
 
 window.onload = myList.setAttribute('list', localStorage.getItem('tasklist'));
+taskList = JSON.parse(localStorage.getItem('tasklist'));
+// console.log(taskList);
 
-closeBtn.addEventListener('click', function() {
+closeBtn.addEventListener('click', () => {
     // popUp.style.opacity = 0;
     popUp.style.display = 'none';
 });
 
-addBtn.addEventListener('click', function() {
+addBtn.addEventListener('click', () => {
     // popUp.style.opacity = 1;
     popUp.style.display = 'flex';
     addInput.focus();
 });
 
-searchBtn.addEventListener('click', function() {
+searchBtn.addEventListener('click', () => {
     searchBox.classList.toggle("showSearchBox");
     searchInput.focus();
 });
 
-submitBtn.addEventListener('click', function() {
+submitBtn.addEventListener('click', () => {
     if(addInput.value === '')
     {
         errorMessage.style.display = 'block';
-        setTimeout(function() {errorMessage.style.display = 'none';}, 2000);
+        setTimeout(() => {errorMessage.style.display = 'none';}, 2000);
     }
     else
     {

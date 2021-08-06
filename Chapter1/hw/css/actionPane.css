@@ -1,27 +1,38 @@
 .action-pane {
     float: left;
     height: 100%;
+    display: grid;
+    grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    /* grid-template-columns: 20% 20% 20% 20% 20%; */
     
 }
 
-.btn {
-    border-radius: 5px;
-    width: 100%;
-    padding: 15px;
-    display: flex;
-    color: #838383;
-    max-height: 10vh;
-    justify-content: left;
-    align-items: center;
-    font-size: 20px;
-    margin: 10 0 10px 0;
+#add-btn {
+    grid-row: 1/2;
 }
 
-.btn:hover {
+#search {
+    grid-row: 2/3;
+}
+
+
+.btn {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    align-items: center;
+    border-radius: 5px;
+    color: #838383;
+    font-size: 20px;
+    height: 100%;
+}
+
+.btn:hover, #setting-pane:hover, #account-pane:hover, .weather-pane:hover {
     background-image: linear-gradient(to top right, #F5F6F7, #DCDDDE);
 }
 
 #plus-icon, #magnifier-icon {
-    margin-right: 15px;
-    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1/2;
 }
