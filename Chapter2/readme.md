@@ -68,7 +68,7 @@ second();
 - Nhắc lại về HTTP Method
     - Get -> Lấy : Chỉ để lấy thông tin (Gửi các thông tin không Security)
     - Post -> Tạo dữ liệu trong db: Gửi lên các thông tin quan trọng
-    - Push -> Cập nhật dữ liệu trong db -> Gửi lên các thông tin quan trọng
+    - Put -> Cập nhật dữ liệu trong db -> Gửi lên các thông tin quan trọng
     - Delete -> Xóa dữ liệu trong db
 - Một số thư viện hoặc hàm sử dụng API 
     - XhrHttpRequest
