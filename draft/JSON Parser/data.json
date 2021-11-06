@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "first_name": "Modesty",
+        "last_name": "Mawer",
+        "email": "mmawer0@gravatar.com",
+        "gender": "Non-binary"
+    },
+    {
+        "id": 2,
+        "first_name": "Filia",
+        "last_name": "Valerius",
+        "email": "fvalerius1@domainmarket.com",
+        "gender": "Genderqueer"
+    },
+    {
+        "id": 3,
+        "first_name": "Verile",
+        "last_name": "Steers",
+        "email": "vsteers2@bluehost.com",
+        "gender": "Non-binary"
+    },
+    {
+        "id": 4,
+        "first_name": "Mort",
+        "last_name": "Rowes",
+        "email": "mrowes3@bandcamp.com",
+        "gender": "Bigender"
+    },
+    {
+        "id": 5,
+        "first_name": "Frank",
+        "last_name": "Pudan",
+        "email": "fpudan4@blog.com",
+        "gender": "Genderqueer"
+    },
+    {
+        "id": 6,
+        "first_name": "Ronny",
+        "last_name": "Traite",
+        "email": "rtraite5@sciencedaily.com",
+        "gender": "Male"
+    },
+    {
+        "id": 7,
+        "first_name": "Granny",
+        "last_name": "Joire",
+        "email": "gjoire6@prlog.org",
+        "gender": "Non-binary"
+    },
+    {
+        "id": 8,
+        "first_name": "Andromache",
+        "last_name": "Brophy",
+        "email": "abrophy7@bing.com",
+        "gender": "Genderfluid"
+    },
+    {
+        "id": 9,
+        "first_name": "Shurwood",
+        "last_name": "Measor",
+        "email": "smeasor8@netlog.com",
+        "gender": "Male"
+    },
+    {
+        "id": 10,
+        "first_name": "Else",
+        "last_name": "Stallard",
+        "email": "estallard9@amazon.com",
+        "gender": "Male"
+    }
+]
